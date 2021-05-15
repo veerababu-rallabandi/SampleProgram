@@ -34,9 +34,6 @@ namespace Practice1
             Console.WriteLine("{0:dddd}",d);
             Console.WriteLine("{0:D}",d);
             Console.WriteLine("{0:f}", d);
-            Console.WriteLine("{0:ff}",d);
-            Console.WriteLine("{0:fff}",d);
-            Console.WriteLine("{0:ffff}",d);
             Console.WriteLine("{0:F}",d);
             Console.WriteLine("{0:g}",d);
             Console.WriteLine("{0:gg}",d);
@@ -58,9 +55,40 @@ namespace Practice1
             Console.WriteLine("{0:y}",d);
             Console.WriteLine("{0:yy}",d);
             Console.WriteLine("{0:yyyy}",d);
-            Console.WriteLine("{0:zz}",d);
-            Console.WriteLine("{0:zzz}",d);
+            
 
+        }
+        public void NumberFormat()
+        {
+            string s = string.Format("{0:C4}", 1232322);
+            Console.WriteLine(s);
+            Console.WriteLine(string.Format("{0:c}",1232342));
+
+            Console.WriteLine(string.Format("{0:e}",1232323));
+            Console.WriteLine(string.Format("{0:E}",12323232));
+
+            Console.WriteLine(string.Format("{0:f3}",12345645));
+            Console.WriteLine(string.Format("{0:F}",12345645));
+
+            Console.WriteLine(string.Format("{0:g}",12342422));
+            Console.WriteLine(string.Format("{0:G}",123434343));
+
+            Console.WriteLine(string.Format("{0:n}",12345645));
+            Console.WriteLine(string.Format("{0:N4}",12345645));
+
+            Console.WriteLine(string.Format("{0:p}",120));
+            Console.WriteLine(string.Format("{0:P1}",130));
+
+           
+
+            Console.WriteLine(string.Format("{0:x}",255));
+            Console.WriteLine(string.Format("{0:x}",23));
+
+
+            System.Globalization.CultureInfo cul = new System.Globalization.CultureInfo("fr-FR");
+            string s1 = string.Format(cul, "{0:p}", 1000);
+            Console.WriteLine(s1);
+            
         }
     }
 }
