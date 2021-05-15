@@ -90,5 +90,39 @@ namespace Practice1
             Console.WriteLine(s1);
             
         }
+        public void customFormat()
+        {
+            //0 placeholder
+            Console.WriteLine(123.ToString("00000"));//00123
+            Console.WriteLine(string.Format("{0:0000}",12));//0012
+
+            Console.WriteLine(string.Format("{0:00.00}",1.2));//01.20
+
+            Console.WriteLine(string.Format("{0:0,0}",12345));//12,345
+            Console.WriteLine(string.Format("{0:0,0.0}",12345));//12,345.0
+
+            //#--Digit placeholder
+            Console.WriteLine(string.Format("{0:##}", 35.5));//36
+            Console.WriteLine(string.Format("{0:####.#}",34.45));//34.5
+            Console.WriteLine(string.Format("{0:#####-#####}",9705082873));//97050-82873
+            Console.WriteLine(string.Format("{0:(##) ###-##}",12345677));//(123) 456-77
+            Console.WriteLine(12343.ToString("(##)##-##"));
+
+            //.-->Decimal point
+
+            Console.WriteLine(string.Format("{0:#0.##%}",.186));//18.6%
+            Console.WriteLine(string.Format("{0:0.###E+0}",86000));//8.6E+4
+
+            //,-->It servers as both group separator and number scaling specifier.
+            Console.WriteLine(string.Format("{0:#,##}",12356));//12,356
+
+            Console.WriteLine(string.Format("{0:(##)###}",9705082873));
+
+            Console.WriteLine(string.Format("{0:#, ,}",1234));
+
+            //%-percentage placeholder
+            Console.WriteLine(string.Format("{0:#0.##%}",1.86));
+
+        }
     }
 }

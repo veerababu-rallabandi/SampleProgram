@@ -12,6 +12,7 @@ namespace Practice1
            // s.Method2();
             s.DateFormat();
             s.NumberFormat();
+            s.customFormat();
 
             //Operators
             Operators o = new Operators();
