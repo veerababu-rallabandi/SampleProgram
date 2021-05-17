@@ -6,6 +6,20 @@ namespace Practice1
     {
         static void Main(string[] args)
         {
+
+            //Array
+            Arrays arr = new Arrays();
+            //sigledimensional
+            arr.single();
+
+            //multidimensional
+            arr.multi();
+
+            //Jagged array
+            arr.Jagged();
+
+            //Array Methods
+            arr.methods();
             
             //Methods
             Methods m = new Methods();
