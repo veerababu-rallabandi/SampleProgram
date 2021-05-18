@@ -171,8 +171,9 @@ namespace Practice1
 
             Console.WriteLine( arr.GetEnumerator());
             Console.WriteLine(arr.GetHashCode());
-            Console.WriteLine(arr.GetLength(1));
+            //Console.WriteLine(arr.GetLength(1));
             Console.WriteLine(arr.ToString());
+           
             
         }
     }

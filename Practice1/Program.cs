@@ -4,8 +4,90 @@ namespace Practice1
 {
     class Program
     {
+        public struct user
+        {
+            public string name;
+            public int age;
+        }
+        struct person
+        {
+            public  string name;
+            public  int age;
+        }
+        struct person1
+        {
+            public string name;
+            public  int age;
+           public person1(string name,int age)
+            {
+                this.name = name;
+                this.age = age;
+            }
+        }
+        struct person2
+        {
+            public int a;
+            public person2(int a)
+            {
+                this.a = a;
+            }
+           
+        }
+        struct home
+        {
+           public static int a { get; set; }
+        }
+       
         static void Main(string[] args)
         {
+
+            var n=@"""i don't know do "" he said";
+            Console.WriteLine(n);
+
+            Dictionary dt = new Dictionary();
+            dt.Method1();
+
+            Console.WriteLine();
+            
+           
+
+            person2 pp = new person2();
+            Console.WriteLine(pp.a);
+            person2 pp1 = new person2(10);
+            Console.WriteLine(pp1.a);
+            //struct
+            user ss;
+            user sss = new user();
+            ss.name ="veeru";
+            ss.age =22;
+            Console.WriteLine($"Name is {ss.name} \nage is {ss.age}");
+
+            user s2;
+            s2.name = "veera";
+            s2.age = 25;
+            Console.WriteLine(ss.GetHashCode());
+            Console.WriteLine(s2.GetHashCode());
+
+            //struct way 2
+           
+            
+            person p = new person();
+            p.name = "veerababu";
+            p.age = 25;
+            
+
+            Console.WriteLine($"way2: Name is {p.name}\nage is {p.age}");
+
+            person1 p1 = new person1("rallabandi", 23);
+            Console.WriteLine($"way3: Name is {p1.name}\nage is {p1.age}");
+
+
+
+            
+            
+            //ListMethods
+            ListMethods l = new ListMethods();
+            l.Methods();
 
             //Array
             Arrays arr = new Arrays();
