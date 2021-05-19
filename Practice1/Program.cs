@@ -41,7 +41,17 @@ namespace Practice1
         static void Main(string[] args)
         {
 
-            var n=@"""i don't know do "" he said";
+
+            //using properties
+            Properity ppp = new Properity();
+            ppp.Method1();
+            //enum 
+            Enumexample e = new Enumexample();
+            e.Method1();
+
+            home.a = 10;
+            Console.WriteLine($"value is {home.a}");
+            var n=@"""I don't know do "" he said";
             Console.WriteLine(n);
 
             Dictionary dt = new Dictionary();
