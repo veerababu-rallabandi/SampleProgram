@@ -4,6 +4,14 @@ using System.Text;
 
 namespace Practice1
 {
+    public partial class user1
+    {
+        private int age;
+        public user1(int a)
+        {
+            age = a;
+        }
+    }
     class First
     {
 

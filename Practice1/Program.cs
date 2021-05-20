@@ -41,10 +41,30 @@ namespace Practice1
         static void Main(string[] args)
         {
 
+            //constructor examples
+            Constructor cs = new Constructor();
+            cs.Method1();
+            cs.Method2();
+            cs.Method3();
+            cs.Method4();
+            cs.Method5();
+            cs.Method6();
+            cs.Method7();
+           
+
+            //partial 
+            partialclass pt = new partialclass();
+            pt.Method1();
+
+
+
             //Methodoverload and Methodoverrirding
             Methodoverloading mm = new Methodoverloading();
             mm.Method1();
             mm.Method2();
+
+
+
 
             //Encapsulation
             Oops oo = new Oops();
@@ -60,9 +80,14 @@ namespace Practice1
             //using properties
             Properity ppp = new Properity();
             ppp.Method1();
+
+
             //enum 
             Enumexample e = new Enumexample();
             e.Method1();
+
+
+
 
             home.a = 10;
             Console.WriteLine($"value is {home.a}");
@@ -80,7 +105,9 @@ namespace Practice1
             Console.WriteLine(pp.a);
             person2 pp1 = new person2(10);
             Console.WriteLine(pp1.a);
-            //struct
+
+
+            //structure examples
             user ss;
             user sss = new user();
             ss.name ="veeru";
@@ -114,8 +141,10 @@ namespace Practice1
             ListMethods l = new ListMethods();
             l.Methods();
 
+
             //Array
             Arrays arr = new Arrays();
+
             //sigledimensional
             arr.single();
 
@@ -134,11 +163,14 @@ namespace Practice1
             m.Method2(10, 20);
             Console.WriteLine(m.Method3());
             Console.WriteLine(m.Method4("veeru"));
+
+
             //by using ref keyword
             int a = 10;
             Console.WriteLine("befor calling a:"+a);
             m.Method5(ref a);
             Console.WriteLine("after calling a:"+a);
+
 
             //By using out keyword
             int b = 10;
@@ -146,9 +178,12 @@ namespace Practice1
             m.Method6(out b);
             Console.WriteLine("after calling b:"+b);
 
+
             //By using params keyword
             m.Method7(1,2,3,4);
             m.Method7(1, "veeru", 1.3f, true);
+
+
 
             //By using in keyword-->read-only
             int c = 12;
@@ -167,7 +202,8 @@ namespace Practice1
             s.NumberFormat();
             s.customFormat();
 
-            //Operators
+
+            //Operators Examples
             Operators o = new Operators();
             o.Arithemetic(10,20);
             o.Relational(10, 20);
@@ -183,6 +219,8 @@ namespace Practice1
             i.iter3(3);
             i.iter4();
 
+
+            //Jumping statement examples
             Jumping j = new Jumping();
             j.jum1();
             j.jum2();
