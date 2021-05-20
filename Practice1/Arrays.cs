@@ -6,7 +6,7 @@ namespace Practice1
 {
     class Arrays
     {
-        public void single()
+        protected internal void single()
         {
             //way 1
             int[] a1 = new int[5];

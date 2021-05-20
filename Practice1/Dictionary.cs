@@ -4,10 +4,12 @@ using System.Text;
 
 namespace Practice1
 {
-    class Dictionary
+    class Dictionary:Arrays
     {
-        public void Method1()
+        internal void Method1()
         {
+            Arrays ar = new Arrays();
+            ar.single();
             Dictionary<int, string> d = new Dictionary<int, string>();
             d.Add(1, "veeru");
             d.Add(2, "madhu");

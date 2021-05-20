@@ -41,6 +41,21 @@ namespace Practice1
         static void Main(string[] args)
         {
 
+            //Methodoverload and Methodoverrirding
+            Methodoverloading mm = new Methodoverloading();
+            mm.Method1();
+            mm.Method2();
+
+            //Encapsulation
+            Oops oo = new Oops();
+            oo.Name = "veerababu";
+            oo.Age = 23;
+
+            //abstraction 
+            oo.hell();
+
+            Console.WriteLine(oo.Name);
+            Console.WriteLine(oo.Age);
 
             //using properties
             Properity ppp = new Properity();
