@@ -16,6 +16,11 @@ namespace Practice1
         public string Name { get; set; }
         public int Age { get; set; }
 
+
+
+
+
+
         //Abstraction purpose
 
         private void say()

@@ -41,6 +41,10 @@ namespace Practice1
         static void Main(string[] args)
         {
 
+
+            Interfacepurpose ip = new Interfacepurpose();
+            ip.say();
+
             //constructor examples
             Constructor cs = new Constructor();
             cs.Method1();
@@ -50,6 +54,7 @@ namespace Practice1
             cs.Method5();
             cs.Method6();
             cs.Method7();
+            cs.Method8();
            
 
             //partial 

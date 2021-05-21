@@ -11,7 +11,7 @@ namespace Practice1
         public int age;
         public user()
         {
-            name = "veerababu";
+            name = "Employee";
             age = 22;
         }
         public user(string a,int b)
@@ -80,9 +80,21 @@ namespace Practice1
             name = a;
         }
     }
+    class Demo5
+    {
+        public Demo5()
+        {
+            Console.WriteLine("I am default constructor");
+        }
+        ~Demo5()
+        {
+            Console.WriteLine(" I am Destructor");
+        }
+    }
 
 
 
+    //all class calling from constructor....
      class Constructor
      {
         public void Method1()
@@ -150,5 +162,21 @@ namespace Practice1
             Demo4 d = new Demo4("veerababu");//calling  parameterized constructor
             Console.WriteLine(Demo4.name);
         }
+        public void Method8()
+        {
+            Demo5 d = new Demo5();
+
+            GC.Collect();
+        }
      }
+
+
+    //partial class purpose 
+     public partial class user2
+    {
+        public void Method3()
+        {
+            Console.WriteLine("I am class 3 in another class");
+        }
+    }
 }
