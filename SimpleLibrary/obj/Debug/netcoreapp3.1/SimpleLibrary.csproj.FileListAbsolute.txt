@@ -1,0 +1,8 @@
+D:\Practice1\SimpleLibrary\bin\Debug\netcoreapp3.1\SimpleLibrary.deps.json
+D:\Practice1\SimpleLibrary\bin\Debug\netcoreapp3.1\SimpleLibrary.dll
+D:\Practice1\SimpleLibrary\bin\Debug\netcoreapp3.1\SimpleLibrary.pdb
+D:\Practice1\SimpleLibrary\obj\Debug\netcoreapp3.1\SimpleLibrary.AssemblyInfoInputs.cache
+D:\Practice1\SimpleLibrary\obj\Debug\netcoreapp3.1\SimpleLibrary.AssemblyInfo.cs
+D:\Practice1\SimpleLibrary\obj\Debug\netcoreapp3.1\SimpleLibrary.csproj.CoreCompileInputs.cache
+D:\Practice1\SimpleLibrary\obj\Debug\netcoreapp3.1\SimpleLibrary.dll
+D:\Practice1\SimpleLibrary\obj\Debug\netcoreapp3.1\SimpleLibrary.pdb

@@ -11,3 +11,6 @@ D:\Practice1\Practice1\obj\Debug\netcoreapp3.1\Practice1.csproj.CoreCompileInput
 D:\Practice1\Practice1\obj\Debug\netcoreapp3.1\Practice1.dll
 D:\Practice1\Practice1\obj\Debug\netcoreapp3.1\Practice1.pdb
 D:\Practice1\Practice1\obj\Debug\netcoreapp3.1\Practice1.genruntimeconfig.cache
+D:\Practice1\Practice1\bin\Debug\netcoreapp3.1\SimpleLibrary.dll
+D:\Practice1\Practice1\bin\Debug\netcoreapp3.1\SimpleLibrary.pdb
+D:\Practice1\Practice1\obj\Debug\netcoreapp3.1\Practice1.csproj.CopyComplete

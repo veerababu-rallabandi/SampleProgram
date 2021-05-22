@@ -1,30 +1,11 @@
 {
   "version": 3,
   "targets": {
-    ".NETCoreApp,Version=v3.1": {
-      "SimpleLibrary/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
-        "compile": {
-          "bin/placeholder/SimpleLibrary.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/SimpleLibrary.dll": {}
-        }
-      }
-    }
+    ".NETCoreApp,Version=v3.1": {}
   },
-  "libraries": {
-    "SimpleLibrary/1.0.0": {
-      "type": "project",
-      "path": "../SimpleLibrary/SimpleLibrary.csproj",
-      "msbuildProject": "../SimpleLibrary/SimpleLibrary.csproj"
-    }
-  },
+  "libraries": {},
   "projectFileDependencyGroups": {
-    ".NETCoreApp,Version=v3.1": [
-      "SimpleLibrary >= 1.0.0"
-    ]
+    ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
     "C:\\Users\\Veerababu Rallabandi\\.nuget\\packages\\": {}
@@ -32,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Practice1\\Practice1\\Practice1.csproj",
-      "projectName": "Practice1",
-      "projectPath": "D:\\Practice1\\Practice1\\Practice1.csproj",
+      "projectUniqueName": "D:\\Practice1\\ClassLibrary1\\ClassLibrary1.csproj",
+      "projectName": "ClassLibrary1",
+      "projectPath": "D:\\Practice1\\ClassLibrary1\\ClassLibrary1.csproj",
       "packagesPath": "C:\\Users\\Veerababu Rallabandi\\.nuget\\packages\\",
-      "outputPath": "D:\\Practice1\\Practice1\\obj\\",
+      "outputPath": "D:\\Practice1\\ClassLibrary1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Veerababu Rallabandi\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -52,11 +33,7 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
-          "projectReferences": {
-            "D:\\Practice1\\SimpleLibrary\\SimpleLibrary.csproj": {
-              "projectPath": "D:\\Practice1\\SimpleLibrary\\SimpleLibrary.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {

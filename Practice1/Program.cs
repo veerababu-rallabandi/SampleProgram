@@ -1,4 +1,5 @@
 ﻿using System;
+using SimpleLibrary;
 
 namespace Practice1
 {
@@ -40,10 +41,25 @@ namespace Practice1
        
         static void Main(string[] args)
         {
+            //calling class by using abstract class
+            abstractclass ab = new abstractclass();
+            ab.Demo();
+            ab.show();
 
+            //Include namespace ,Method1 is in Simplelibray namespace
+
+            Class1 cs1=new Class1();
+            cs1.Method1(new int[] {1,2,3,4 });
+
+
+
+            //Multiple Inheritance using Interface
+            MultipleInheritance mi = new MultipleInheritance();
+            mi.Demo();
+            mi.detail();
 
             Interfacepurpose ip = new Interfacepurpose();
-            ip.say();
+            ip.Method1();
 
             //constructor examples
             Constructor cs = new Constructor();

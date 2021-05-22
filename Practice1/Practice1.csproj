@@ -3,7 +3,11 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <StartupObject>Practice1.namespaceclass2</StartupObject>
+    <StartupObject>Practice1.Program</StartupObject>
   </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SimpleLibrary\SimpleLibrary.csproj" />
+  </ItemGroup>
 
 </Project>
