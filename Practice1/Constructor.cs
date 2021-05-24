@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Practice1
 {
-    class user
+    partial class user
     {
         //Default constructor
         public string name;

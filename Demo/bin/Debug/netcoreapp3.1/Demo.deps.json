@@ -1,0 +1,49 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Demo/1.0.0": {
+        "dependencies": {
+          "Practice1": "1.0.0"
+        },
+        "runtime": {
+          "Demo.dll": {}
+        }
+      },
+      "Practice1/1.0.0": {
+        "dependencies": {
+          "SimpleLibrary": "1.0.0"
+        },
+        "runtime": {
+          "Practice1.dll": {}
+        }
+      },
+      "SimpleLibrary/1.0.0": {
+        "runtime": {
+          "SimpleLibrary.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Demo/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Practice1/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SimpleLibrary/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

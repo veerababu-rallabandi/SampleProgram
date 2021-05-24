@@ -41,6 +41,10 @@ namespace Practice1
        
         static void Main(string[] args)
         {
+
+            //structure
+            Structure ssb = new Structure();
+            ssb.Method1();
             //calling class by using abstract class
             abstractclass ab = new abstractclass();
             ab.Demo();
