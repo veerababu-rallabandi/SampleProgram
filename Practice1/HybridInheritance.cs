@@ -24,7 +24,7 @@ namespace Practice1
         public override void show()
         {
             // base.show();
-            Console.WriteLine("I am method from second1");
+            Console.WriteLine("I am method from second1" );
         }
 
     }
