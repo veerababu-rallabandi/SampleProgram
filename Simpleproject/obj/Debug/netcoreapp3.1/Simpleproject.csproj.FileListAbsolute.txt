@@ -1,0 +1,15 @@
+D:\Practice1\Simpleproject\bin\Debug\netcoreapp3.1\Simpleproject.exe
+D:\Practice1\Simpleproject\bin\Debug\netcoreapp3.1\Simpleproject.deps.json
+D:\Practice1\Simpleproject\bin\Debug\netcoreapp3.1\Simpleproject.runtimeconfig.json
+D:\Practice1\Simpleproject\bin\Debug\netcoreapp3.1\Simpleproject.runtimeconfig.dev.json
+D:\Practice1\Simpleproject\bin\Debug\netcoreapp3.1\Simpleproject.dll
+D:\Practice1\Simpleproject\bin\Debug\netcoreapp3.1\Simpleproject.pdb
+D:\Practice1\Simpleproject\obj\Debug\netcoreapp3.1\Simpleproject.csprojAssemblyReference.cache
+D:\Practice1\Simpleproject\obj\Debug\netcoreapp3.1\Simpleproject.Form1.resources
+D:\Practice1\Simpleproject\obj\Debug\netcoreapp3.1\Simpleproject.csproj.GenerateResource.cache
+D:\Practice1\Simpleproject\obj\Debug\netcoreapp3.1\Simpleproject.AssemblyInfoInputs.cache
+D:\Practice1\Simpleproject\obj\Debug\netcoreapp3.1\Simpleproject.AssemblyInfo.cs
+D:\Practice1\Simpleproject\obj\Debug\netcoreapp3.1\Simpleproject.csproj.CoreCompileInputs.cache
+D:\Practice1\Simpleproject\obj\Debug\netcoreapp3.1\Simpleproject.dll
+D:\Practice1\Simpleproject\obj\Debug\netcoreapp3.1\Simpleproject.pdb
+D:\Practice1\Simpleproject\obj\Debug\netcoreapp3.1\Simpleproject.genruntimeconfig.cache
