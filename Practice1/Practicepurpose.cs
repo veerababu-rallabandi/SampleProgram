@@ -79,13 +79,14 @@ namespace Practice1
         static void Iterateabove2000(IEnumerable<int> o)
         {
 
-            foreach(int i in o)
+            foreach (int i in o)
             {
                 Console.WriteLine(i);
             }
 
             /*By using IEnumerator
             while (o.MoveNext())
+
             {
                 Console.WriteLine(o.Current.ToString());
             }
