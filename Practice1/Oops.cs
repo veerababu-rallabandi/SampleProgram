@@ -5,6 +5,10 @@ using System.Text;
 namespace Practice1
 {
    
+    abstract class Demo5654e
+    {
+        public abstract void say();
+    }
     class Oops
     {
 
@@ -20,13 +24,17 @@ namespace Practice1
 
 
 
+        public void say()
+        {
+            Console.WriteLine("i am abstract");
+        }
 
         //Abstraction purpose
 
-        private void say()
-        {
-            Console.WriteLine("it is abstraction");
-        }
+        //private void say()
+        //{
+        //    Console.WriteLine("it is abstraction");
+        //}
         public void hell()
         {
             Console.WriteLine("it is public information");

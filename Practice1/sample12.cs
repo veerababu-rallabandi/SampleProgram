@@ -4,6 +4,10 @@ using System.Text;
 
 namespace Practice1
 {
+    abstract class Demo434
+    {
+        public abstract void say();
+    }
      class A
     {
        public A()
@@ -13,6 +17,10 @@ namespace Practice1
         public virtual void say()
         {
             Console.WriteLine("A method");
+        }
+        public virtual void hello()
+        {
+
         }
     }
     class B:A
@@ -24,6 +32,10 @@ namespace Practice1
         public override void say()
         {
             Console.WriteLine("B Method");
+        }
+        public override void hello()
+        {
+            Console.WriteLine("i am child hello");
         }
     }
     class sample12:A
@@ -37,6 +49,8 @@ namespace Practice1
             a.say();
             b.say();
             c.say();
+            
+            Console.WriteLine(string.Format("{0:4}","veerababu"));
         }
     }
 }

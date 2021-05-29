@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Practice1
 {
-   public  class MyException : ApplicationException
+    public class DemoException:ApplicationException
     {
         public override string Message
         {
@@ -13,10 +13,14 @@ namespace Practice1
                 return "divided by -1";
             }
         }
-        //public MyException(string name):base(name)
-        //{
+    }
+    public  class MyException :Exception
+    {
+        
+        public MyException(string name) : base(name)
+        {
 
-        //}
+        }
     }
     class Exception3
     {
@@ -26,13 +30,28 @@ namespace Practice1
             int b = -1;
             try
             {
-
                 int z = a / b;
-                if (b == -1)
+                if(true)
                 {
-                    throw new MyException();
+                    //throw new DemoException();
+                    throw new ApplicationException("some");
                 }
-              //  Console.WriteLine(divide(1,1));
+                
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            //catch(DemoException ex)
+            //{
+            //    Console.WriteLine(ex.Message);
+            //}
+
+
+            //try2
+            try
+            {
+                Console.WriteLine(divide(1,-1));
             }
             catch (MyException ex1)
             {
@@ -41,7 +60,7 @@ namespace Practice1
             catch(DivideByZeroException ex2)
             {
                 Console.WriteLine("Divided by zero");
-               // Console.WriteLine(divide(10,1));
+               Console.WriteLine(divide(10,1));
             }
             catch (Exception ex)
             {
@@ -53,17 +72,17 @@ namespace Practice1
                 Console.WriteLine("good bye");
             }
         }
-        //public static int divide(int a,int b)
-        //{
-        //    if(a<0 || b < 0)
-        //    {
-        //        throw new Exception("Negative values not allowed");
-        //    }
-        //    if (a == b)
-        //    {
-        //        throw new MyException("Numerator and dimenator are equal");
-        //    }
-        //    return a/b;
-        //}
+        public static int divide(int a, int b)
+        {
+            if (a < 0 || b < 0)
+            {
+                throw new Exception("negative values not allowed");
+            }
+            if (a == b)
+            {
+                throw new MyException("numerator and dimenator are equal");
+            }
+            return a / b;
+        }
     }
 }

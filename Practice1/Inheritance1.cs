@@ -7,22 +7,22 @@ namespace Practice1
     public class class1
     {
         //Explicit constructor
-        public int a;
+        //  public int a;
         public class1(int i)
         {
-            Console.WriteLine("I am class1 constructor"+i);
+            Console.WriteLine("I am class1 constructor" + i);
         }
-        public void show1()
+        public void show()
         {
             Console.WriteLine("I am parent Method");
         }
     }
     class Inheritance1:class1
     {
-        Inheritance1(int a):base(a+2)
+        Inheritance1(int a) : base(a + 2)
         {
-           
-            Console.WriteLine("I am child constructor"+a);
+
+            Console.WriteLine("I am child constructor" + a);
         }
         public void show2()
         {
@@ -31,7 +31,7 @@ namespace Practice1
         static void Main(string[] args)
         {
 
-            Inheritance1 ei = new Inheritance1(50);
+           // Inheritance1 ei = new Inheritance1(50);
 
 
             /*

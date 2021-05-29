@@ -4,6 +4,15 @@ using System.Text;
 
 namespace Practice1
 {
+    static class Abcd
+    {
+        
+        static Abcd()
+        {
+
+        }
+       
+    }
     interface Iuser1
     {
         

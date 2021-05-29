@@ -4,8 +4,9 @@ using System.Text;
 
 namespace Practice1
 {
-    class Matrix
-    { 
+    class Matrix:Object
+    {
+        string name;
         public int a,b,c,d;
         public Matrix(int a,int b,int c,int d)
         {
@@ -30,6 +31,7 @@ namespace Practice1
             //return "hello world";
             return a + " " + b + "\n" + c + " " + d;
         }
+        
     }
     class Operatoroverloading
     {
@@ -38,9 +40,13 @@ namespace Practice1
         {
             Matrix m1 = new Matrix(10, 12, 3, 6);
             Matrix m2 = new Matrix(2, 2, 4, 5);
+           
+           
             Matrix result = m1 + m2;
             Matrix result1 = m1 - m2;
             Console.WriteLine(m1);
+           
+           // Console.WriteLine(m1.ToString());
             Console.WriteLine(m2);
             Console.WriteLine(result);
             Console.WriteLine(result1);
