@@ -5,29 +5,31 @@ using System.IO;
 
 namespace Practice1
 {
+
     class Filestream1
     {
         static void Main(string[] args)
         {
             string path = @"D:\Practice1\sample\Text11.txt";
             Console.WriteLine("hello");
-            
+
+            byte[] bb=UnicodeEncoding.UTF8.GetBytes("veerababu");
+
 
             using (FileStream f = new FileStream(path, FileMode.Append, FileAccess.Write))
-
             {
                 if (f.CanWrite)
                 {
                     byte[] a = Encoding.UTF8.GetBytes("veerababu rallabandi");
                     f.Write(a, 0, a.Length);
                 }
-                
+
                 f.Flush();
                 f.Close();
 
 
             }
-            using(FileStream f=new FileStream(path, FileMode.Open, FileAccess.Read))
+            using (FileStream f=new FileStream(path, FileMode.Open, FileAccess.Read))
             {
                 if (f.CanRead)
                 {

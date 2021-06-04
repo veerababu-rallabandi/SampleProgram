@@ -11,6 +11,28 @@ namespace Practice1
         static void Main(string[] args)
         {
 
+            //Directory.CreateDirectory(@"E:\sample");
+            //Console.WriteLine(Directory.GetCurrentDirectory());
+            //foreach (string i in Directory.GetDirectories(@"E:\sample", "*.txt", SearchOption.AllDirectories))
+            //{
+            //    Console.WriteLine(i);
+            //}
+            //Directory.Delete(@"E:\sample");  ".*"--directories
+            //Directory.Delete(@"D:\Practice1\sample", true);
+            
+            // IEnumerable<string> di=Directory.EnumerateFileSystemEntries(@"E:\sample2");
+            //foreach(string i in di)
+            //{
+            //    Console.WriteLine(i);
+            //}
+
+            IEnumerable<string> s= Directory.EnumerateFileSystemEntries(@"E:\sample2", "?.txt");
+            foreach(string i in s)
+            {
+                Console.WriteLine(i);
+            }
+
+
             DirectoryInfo dir = new DirectoryInfo(@"E:\sample");
             Console.WriteLine(dir.FullName);
             Console.WriteLine(dir.Name);

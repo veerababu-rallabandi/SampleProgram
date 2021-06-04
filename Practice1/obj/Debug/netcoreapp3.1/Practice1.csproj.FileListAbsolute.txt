@@ -14,3 +14,4 @@ D:\Practice1\Practice1\obj\Debug\netcoreapp3.1\Practice1.genruntimeconfig.cache
 D:\Practice1\Practice1\bin\Debug\netcoreapp3.1\SimpleLibrary.dll
 D:\Practice1\Practice1\bin\Debug\netcoreapp3.1\SimpleLibrary.pdb
 D:\Practice1\Practice1\obj\Debug\netcoreapp3.1\Practice1.csproj.CopyComplete
+D:\Practice1\Practice1\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll

@@ -19,7 +19,7 @@ namespace Practice1
            
             catch (ArithmeticException ex)
             {
-                Console.WriteLine(ex.Source);
+              //  Console.WriteLine(ex.Source);
                 Console.WriteLine(ex.Message);
             }
             //catch (FormatException ex1)
