@@ -11,34 +11,6 @@
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
       },
-      "Practice1/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
-        "dependencies": {
-          "Newtonsoft.Json": "13.0.1",
-          "SimpleLibrary": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/Practice1.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Practice1.dll": {}
-        }
-      },
-      "Practice2/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
-        "dependencies": {
-          "Newtonsoft.Json": "13.0.1",
-          "SimpleLibrary": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/Practice2.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Practice2.dll": {}
-        }
-      },
       "SimpleLibrary/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
@@ -79,16 +51,6 @@
         "packageIcon.png"
       ]
     },
-    "Practice1/1.0.0": {
-      "type": "project",
-      "path": "../Practice1/Practice1.csproj",
-      "msbuildProject": "../Practice1/Practice1.csproj"
-    },
-    "Practice2/1.0.0": {
-      "type": "project",
-      "path": "../Practice2/Practice2.csproj",
-      "msbuildProject": "../Practice2/Practice2.csproj"
-    },
     "SimpleLibrary/1.0.0": {
       "type": "project",
       "path": "../SimpleLibrary/SimpleLibrary.csproj",
@@ -97,8 +59,8 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
-      "Practice1 >= 1.0.0",
-      "Practice2 >= 1.0.0"
+      "Newtonsoft.Json >= 13.0.1",
+      "SimpleLibrary >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -107,11 +69,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Practice1\\Demo\\Demo.csproj",
-      "projectName": "Demo",
-      "projectPath": "D:\\Practice1\\Demo\\Demo.csproj",
+      "projectUniqueName": "D:\\Practice1\\Practice2\\Practice2.csproj",
+      "projectName": "Practice2",
+      "projectPath": "D:\\Practice1\\Practice2\\Practice2.csproj",
       "packagesPath": "C:\\Users\\Veerababu Rallabandi\\.nuget\\packages\\",
-      "outputPath": "D:\\Practice1\\Demo\\obj\\",
+      "outputPath": "D:\\Practice1\\Practice2\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Veerababu Rallabandi\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -128,11 +90,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "D:\\Practice1\\Practice1\\Practice1.csproj": {
-              "projectPath": "D:\\Practice1\\Practice1\\Practice1.csproj"
-            },
-            "D:\\Practice1\\Practice2\\Practice2.csproj": {
-              "projectPath": "D:\\Practice1\\Practice2\\Practice2.csproj"
+            "D:\\Practice1\\SimpleLibrary\\SimpleLibrary.csproj": {
+              "projectPath": "D:\\Practice1\\SimpleLibrary\\SimpleLibrary.csproj"
             }
           }
         }
@@ -146,6 +105,12 @@
     "frameworks": {
       "netcoreapp3.1": {
         "targetAlias": "netcoreapp3.1",
+        "dependencies": {
+          "Newtonsoft.Json": {
+            "target": "Package",
+            "version": "[13.0.1, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",
