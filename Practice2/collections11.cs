@@ -5,7 +5,7 @@ using System.Collections;
 
 namespace Practice2
 {
-    class Employee
+    class DemoDetails
     {
         public string name { get; set; }
         public int id { get; set; }
@@ -13,12 +13,12 @@ namespace Practice2
 
     class Dummy:IEnumerable
     {
-        List<Employee> list = new List<Employee>();
-        public void Add(Employee Emp)
+        List<DemoDetails> list = new List<DemoDetails>();
+        public void Add(DemoDetails Emp)
         {
             list.Add(Emp);
         }
-        public Employee this[int index]
+        public DemoDetails this[int index]
         {
             get { return list[index]; }
         }
@@ -36,11 +36,19 @@ namespace Practice2
         }
     }
 
+    //class sample111 : IEnumerable
+    //{
+    //    public IEnumerator GetEnumerator()
+    //    {
+    //        yield return "hello";
+    //    }
+    //}
+
     class DummyEnumerator : IEnumerator
     {
         Dummy orgcall;
         int currentIndex;
-        Employee currentEmployee;
+        DemoDetails currentEmployee;
 
         //constructor
         public DummyEnumerator(Dummy org)
@@ -73,6 +81,7 @@ namespace Practice2
     
     class collections11
     {
+       
         static void foreachveera()
         {
 
@@ -88,17 +97,22 @@ namespace Practice2
 
             //By using custom class
             Dummy l = new Dummy(); //but arises error in foreach bcoz it has not GetEnumerator
-            l.Add(new Employee() { id = 19, name = "madhu" });
-            l.Add(new Employee() { id = 20, name = "srinu" });
+            l.Add(new DemoDetails() { id = 19, name = "madhu" });
+            l.Add(new DemoDetails() { id = 20, name = "srinu" });
+
+         
 
            
             
 
             //This program how working foreach() using GetEnumberator
-            foreach(Employee i in l)
+            foreach(DemoDetails i in l)
             {
                 Console.WriteLine(i.name+" "+i.id);
             }
+
+            
+
 
 
             
