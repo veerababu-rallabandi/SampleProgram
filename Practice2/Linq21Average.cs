@@ -15,7 +15,13 @@ namespace Practice2
             List<int> l2 = new List<int>() { 3, 4, 5, 6, 9, 10 };
 
             //Method syntax
-            var val1 = l1.Average();
+            double val1 = l1.Average();
+            var res= l1.Where(n => n > 5).Average();
+            
+            Console.WriteLine(res);
+
+            
+
             //query syntax
             var val2 = (from num in l2 select num).Average();
             Console.WriteLine(val1+" and "+val2);
@@ -55,6 +61,10 @@ namespace Practice2
 
             int val4 = college.getdatails().Aggregate<college, int>(0, (num, clg) => num = clg.id);
             Console.WriteLine(val4);
+
+
+
+            
         }
 
     }

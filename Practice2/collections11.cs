@@ -5,20 +5,21 @@ using System.Collections;
 
 namespace Practice2
 {
-    class DemoDetails
+    class PersonDetails
     {
-        public string name { get; set; }
         public int id { get; set; }
+        public string name { get; set; }
+        public double height { get; set; }
     }
 
-    class Dummy:IEnumerable
+    class Person:IEnumerable
     {
-        List<DemoDetails> list = new List<DemoDetails>();
-        public void Add(DemoDetails Emp)
+        List<PersonDetails> list = new List<PersonDetails>();
+        public void Add(PersonDetails pd)
         {
-            list.Add(Emp);
+            list.Add(pd);
         }
-        public DemoDetails this[int index]
+        public PersonDetails this[int index]
         {
             get { return list[index]; }
         }
@@ -32,7 +33,7 @@ namespace Practice2
 
             //using custom GetEnumberator
 
-            return new DummyEnumerator(this);
+            return new PersonEnumerator(this);
         }
     }
 
@@ -44,14 +45,14 @@ namespace Practice2
     //    }
     //}
 
-    class DummyEnumerator : IEnumerator
+    class PersonEnumerator : IEnumerator
     {
-        Dummy orgcall;
+        Person orgcall;
         int currentIndex;
-        DemoDetails currentEmployee;
+        PersonDetails currentEmployee;
 
         //constructor
-        public DummyEnumerator(Dummy org)
+        public PersonEnumerator(Person org)
         {
             orgcall = org;
             currentIndex = -1;//MoveNext() starts from -1->0 1 2(Before first so using -1);
@@ -96,9 +97,9 @@ namespace Practice2
             // List<Employee> l = new List<Employee>();
 
             //By using custom class
-            Dummy l = new Dummy(); //but arises error in foreach bcoz it has not GetEnumerator
-            l.Add(new DemoDetails() { id = 19, name = "madhu" });
-            l.Add(new DemoDetails() { id = 20, name = "srinu" });
+            Person l = new Person(); //but arises error in foreach bcoz it has not GetEnumerator
+            l.Add(new PersonDetails() { id = 19, name = "madhu" ,height=5.4});
+            l.Add(new PersonDetails() { id = 20, name = "srinu",height=5.8 });
 
          
 
@@ -106,7 +107,7 @@ namespace Practice2
             
 
             //This program how working foreach() using GetEnumberator
-            foreach(DemoDetails i in l)
+            foreach(PersonDetails i in l)
             {
                 Console.WriteLine(i.name+" "+i.id);
             }
